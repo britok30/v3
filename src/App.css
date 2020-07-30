@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif !important;
+    background: #181818 !important;
+    color: #fff !important;
+}
+
+#brito {
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.521),
+            rgba(0, 0, 0, 0.527)
+        ),
+        url(./images/britojs2.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro h3 {
+    font-size: 5rem;
+}
+
+.intro p {
+    font-size: 2rem;
+}
+
+.intro h3,
+.intro p {
+    text-align: center;
+    letter-spacing: 1rem;
+    font-weight: 300;
+}
