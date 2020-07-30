@@ -38,11 +38,11 @@ a {
 }
 
 a:hover {
-    color: red !important;
+    color: #feceab !important;
 }
 
 .number {
-    color: red;
+    color: #feceab;
 }
 
 ul {
@@ -68,7 +68,7 @@ Icons
 .github2 {
     font-size: 2.5rem;
     padding: 1rem;
-    color: rgb(199, 55, 55) !important;
+    color: #feceab !important;
 }
 /* ********************
 Intro
@@ -144,7 +144,7 @@ Projects
 }
 
 .p-card {
-    background: #fff;
+    background: #feceab;
     border-radius: 0.5rem;
     padding: 2rem;
 }
@@ -163,7 +163,7 @@ Skills
 }
 
 .skills:hover {
-    color: red;
+    color: #feceab;
     cursor: pointer;
 }
 
