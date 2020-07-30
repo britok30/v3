@@ -40,3 +40,7 @@ body {
     letter-spacing: 1rem;
     font-weight: 300;
 }
+
+.whitespace {
+    margin: 5rem;
+}
