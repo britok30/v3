@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif !important;
-    background: #181818 !important;
+    background: #000 !important;
     color: #fff !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -16,6 +16,10 @@ body {
 
 .whitespace {
     margin: 5rem;
+}
+
+.project-space {
+    margin: 3rem;
 }
 
 section {
@@ -30,6 +34,17 @@ p {
 
 .number {
     color: red;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.7rem;
+    display: inline-block;
+    margin: 1rem;
 }
 
 /* ********************
@@ -78,4 +93,33 @@ Headers & text
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
+}
+
+.small-heading {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* ********************
+Projects
+******************** */
+.project-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.description {
+    color: #000;
+    font-weight: 400;
+}
+
+.p-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.stack {
+    margin-top: 1rem;
 }
