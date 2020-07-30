@@ -8,7 +8,9 @@ const Footer = () => {
                 <div className="col-md-12">
                     <div className="footer-text">
                         <Fade bottom cascade duration={3000} distance={'1rem'}>
-                            <p>&copy; 2020 | Design & code by Kelvin Brito</p>
+                            <p>
+                                &copy; 2020 | Designed & built by Kelvin Brito
+                            </p>
                             <p>
                                 Made with
                                 <span role="img" aria-label="emoji">
