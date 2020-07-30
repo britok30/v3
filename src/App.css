@@ -123,3 +123,17 @@ Projects
 .stack {
     margin-top: 1rem;
 }
+
+/* ********************
+Skills
+******************** */
+.skills {
+    font-size: 2rem;
+    font-weight: 600;
+    transition: ease 0.4s;
+}
+
+.skills:hover {
+    color: red;
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+
+const Skills = () => {
+    return (
+        <div>
+            <section>
+                <div className="row">
+                    <div className="col-md-4 col-lg-4 col-sm-4">
+                        <div className="sub-heading">Skills</div>
+                    </div>
+                    <div className="col-md-8 col-lg-8 col-sm-8">
+                        <Fade bottom cascade duration={4000} distance={'1rem'}>
+                            <ul>
+                                <li className="skills">HTML</li>
+                                <li className="skills">CSS/Sass</li>
+                                <li className="skills">JavaScript (ES6+)</li>
+                                <li className="skills">Bootstrap</li>
+                                <li className="skills">React</li>
+                                <li className="skills">Redux</li>
+                                <li className="skills">Vue</li>
+                                <li className="skills">Node/Express</li>
+                                <li className="skills">Selenium (JS)</li>
+                                <li className="skills">Adobe Creative Suite</li>
+                            </ul>
+                        </Fade>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+};
+
+export default Skills;
