@@ -6,13 +6,41 @@ body {
     font-family: 'Raleway', sans-serif !important;
     background: #181818 !important;
     color: #fff !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.whitespace {
+    margin: 5rem;
+}
+
+section {
+    padding: 10rem 0;
+}
+
+p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin: auto;
+}
+
+.number {
+    color: red;
+}
+
+/* ********************
+Intro
+******************** */
 
 #brito {
     background: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.521),
-            rgba(0, 0, 0, 0.527)
+            rgba(0, 0, 0, 0.621),
+            rgba(0, 0, 0, 0.621)
         ),
         url(./images/britojs2.jpg) no-repeat center center/cover;
     height: 100vh;
@@ -41,6 +69,13 @@ body {
     font-weight: 300;
 }
 
-.whitespace {
-    margin: 5rem;
+/* ********************
+Headers & text
+******************** */
+.sub-heading {
+    font-size: 9.5rem;
+    font-weight: 600;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
 }
