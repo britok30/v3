@@ -31,6 +31,15 @@ p {
     font-weight: 300;
     margin: auto;
 }
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+    transition: ease 0.4s;
+}
+
+a:hover {
+    color: red !important;
+}
 
 .number {
     color: red;
@@ -47,6 +56,20 @@ ul li {
     margin: 1rem;
 }
 
+.hr {
+    border-color: #fff;
+    opacity: 0.5;
+}
+
+/* ********************
+Icons
+******************** */
+.link,
+.github2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: rgb(199, 55, 55) !important;
+}
 /* ********************
 Intro
 ******************** */
@@ -101,6 +124,12 @@ Headers & text
     margin-bottom: 2rem;
 }
 
+.mini-heading {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
 /* ********************
 Projects
 ******************** */
@@ -136,4 +165,41 @@ Skills
 .skills:hover {
     color: red;
     cursor: pointer;
+}
+
+/* ********************
+Connect
+******************** */
+.connect {
+    font-size: 3rem;
+    font-weight: 600;
+    transition: ease 0.4s;
+}
+
+.connect-list {
+    margin: auto;
+}
+
+/* ********************
+Footer
+******************** */
+.footer {
+    margin: 4rem 0;
+}
+
+.footer-text p {
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* ********************
+Media Queries
+******************** */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .connect {
+        display: block;
+        text-align: center;
+    }
 }

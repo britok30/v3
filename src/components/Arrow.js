@@ -15,7 +15,7 @@ const Arrow = () => {
             <Fade top duration={3000} delay={5000}>
                 <img
                     style={arrowStyle}
-                    class="arrow"
+                    className="arrow"
                     src={arrow}
                     alt="arrow-down"
                 />

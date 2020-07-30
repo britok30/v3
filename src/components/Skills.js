@@ -7,11 +7,18 @@ const Skills = () => {
             <section>
                 <div className="row">
                     <div className="col-md-4 col-lg-4 col-sm-4">
-                        <div className="sub-heading">Skills</div>
+                        <div className="sub-heading">
+                            <span className="number">03.</span> Skills
+                        </div>
                     </div>
                     <div className="col-md-8 col-lg-8 col-sm-8">
-                        <Fade bottom cascade duration={4000} distance={'1rem'}>
-                            <ul>
+                        <ul>
+                            <Fade
+                                bottom
+                                cascade
+                                duration={3000}
+                                distance={'1rem'}
+                            >
                                 <li className="skills">HTML</li>
                                 <li className="skills">CSS/Sass</li>
                                 <li className="skills">JavaScript (ES6+)</li>
@@ -22,8 +29,8 @@ const Skills = () => {
                                 <li className="skills">Node/Express</li>
                                 <li className="skills">Selenium (JS)</li>
                                 <li className="skills">Adobe Creative Suite</li>
-                            </ul>
-                        </Fade>
+                            </Fade>
+                        </ul>
                     </div>
                 </div>
             </section>
