@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Lines } from 'react-preloaders';
+import { Sugar } from 'react-preloaders';
 import Intro from './Intro';
 import About from './About';
 import Work from './Work';
@@ -13,7 +13,7 @@ const App = () => {
     return (
         <Fragment>
             <Intro />
-            <Lines
+            <Sugar
                 animation={'fade'}
                 time={3500}
                 background={'#000'}
