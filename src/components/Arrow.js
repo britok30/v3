@@ -12,7 +12,7 @@ const Arrow = () => {
     };
     return (
         <div>
-            <Fade top duration={3000} delay={5500}>
+            <Fade top duration={3000} delay={6000}>
                 <img
                     style={arrowStyle}
                     className="arrow"
