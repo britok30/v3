@@ -80,7 +80,7 @@ Intro
             rgba(0, 0, 0, 0.621),
             rgba(0, 0, 0, 0.621)
         ),
-        url(./images/britojs4.jpg) no-repeat center center/cover;
+        url(./images/hero.jpg) no-repeat center center/cover;
     height: 100vh;
     position: relative;
 }
