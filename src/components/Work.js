@@ -9,7 +9,7 @@ import hike from '../images/hike.png';
 import skudra from '../images/skudra.png';
 import akg from '../images/akg.png';
 import productivo from '../images/productivo.png';
-import { Fade } from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
 
 const Work = () => {
     return (
