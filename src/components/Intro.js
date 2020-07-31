@@ -7,7 +7,7 @@ const Intro = () => {
         <div>
             <div id="brito">
                 <div className="intro">
-                    <Fade bottom cascade duration={3000} delay={4000}>
+                    <Fade bottom cascade duration={3000} delay={4500}>
                         <h3>Brito</h3>
                         <p>Frontend Developer</p>
                     </Fade>

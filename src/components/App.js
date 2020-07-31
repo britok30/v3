@@ -15,7 +15,7 @@ const App = () => {
             <Intro />
             <Lines
                 animation={'fade'}
-                time={2500}
+                time={3500}
                 background={'#000'}
                 color={'#feceab'}
             />
