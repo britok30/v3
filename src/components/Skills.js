@@ -26,6 +26,7 @@ const Skills = () => {
                                 <li className="skills">Vue</li>
                                 <li className="skills">Node/Express</li>
                                 <li className="skills">Selenium (JS)</li>
+                                <li className="skills">Git</li>
                                 <li className="skills">Adobe Creative Suite</li>
                             </Fade>
                         </ul>
