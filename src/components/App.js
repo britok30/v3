@@ -16,7 +16,7 @@ const App = () => {
             <Lines
                 animation={'fade'}
                 time={2500}
-                background={'linear-gradient(to right, #000000, #434343)'}
+                background={'#000'}
                 color={'#feceab'}
             />
             <div className="container">
