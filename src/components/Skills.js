@@ -7,9 +7,7 @@ const Skills = () => {
             <section>
                 <div className="row">
                     <div className="col-md-4 col-lg-4 col-sm-4">
-                        <div className="sub-heading">
-                            <span className="number">03.</span> Skills
-                        </div>
+                        <div className="sub-heading">Skills</div>
                     </div>
                     <div className="col-md-8 col-lg-8 col-sm-8">
                         <ul>

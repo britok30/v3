@@ -9,14 +9,15 @@ import hike from '../images/hike.png';
 import skudra from '../images/skudra.png';
 import akg from '../images/akg.png';
 import productivo from '../images/productivo.png';
+import { Fade } from 'react-reveal/Fade';
 
 const Work = () => {
     return (
         <div>
             <section>
-                <h2 className="sub-heading">
-                    <span className="number">02.</span> Some things I've Built
-                </h2>
+                <Fade bottom duration={3000} distance={'1rem'}>
+                    <h2 className="sub-heading">Some Things I've Built</h2>
+                </Fade>
                 <Project
                     title="Playspace"
                     description="A web app for visualizing video game data. View your

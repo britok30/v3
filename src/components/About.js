@@ -8,9 +8,7 @@ const About = () => {
                 <div className="row">
                     <div className="col-md-6 col-lg-6 col-sm-6">
                         <Fade bottom duration={3000} distance={'1rem'}>
-                            <h2 className="sub-heading">
-                                <span className="number">01.</span>{" "}About Me
-                            </h2>
+                            <h2 className="sub-heading">About Me</h2>
                         </Fade>
                     </div>
                     <div className="col-md-6 col-lg-6 col-sm-6">
