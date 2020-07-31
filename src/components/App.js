@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Lines } from 'react-preloaders';
 import Intro from './Intro';
 import About from './About';
 import Work from './Work';
@@ -10,8 +11,14 @@ import '../App.css';
 
 const App = () => {
     return (
-        <div>
+        <Fragment>
             <Intro />
+            <Lines
+                animation={'fade'}
+                time={2500}
+                background={'linear-gradient(to right, #000000, #434343)'}
+                color={'#feceab'}
+            />
             <div className="container">
                 <About />
                 <Work />
@@ -19,7 +26,7 @@ const App = () => {
                 <Connect />
                 <Footer />
             </div>
-        </div>
+        </Fragment>
     );
 };
 
