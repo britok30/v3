@@ -11,7 +11,7 @@ const Intro = () => {
                         <h3 className="intro-lead">Brito</h3>
                         <p className="intro-p">Frontend Developer</p>
                     </Fade>
-                    <div className="whitespace"></div>
+                    <div className="arrowspace"></div>
                     <Arrow />
                 </div>
             </div>
