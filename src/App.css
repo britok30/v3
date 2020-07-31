@@ -88,16 +88,16 @@ Intro
     transform: translate(-50%, -50%);
 }
 
-.intro h3 {
+.intro-lead {
     font-size: 5rem;
 }
 
-.intro p {
+.intro-p {
     font-size: 2rem;
 }
 
-.intro h3,
-.intro p {
+.intro-lead,
+.intro-p {
     text-align: center;
     letter-spacing: 1rem;
     font-weight: 300;
@@ -194,6 +194,22 @@ Footer
 Media Queries
 ******************** */
 
+/* Iphone 5s  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    .connect {
+        display: block;
+        text-align: center;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .intro-p {
+        font-size: 1.3rem;
+    }
+}
+
 /* Iphone X */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
     .connect {
@@ -203,6 +219,10 @@ Media Queries
 
     .intro {
         width: 100%;
+    }
+
+    .intro-p {
+        font-size: 1.3rem;
     }
 }
 /* Iphone XR */
@@ -215,5 +235,9 @@ Media Queries
 
     .intro {
         width: 100%;
+    }
+
+    .intro-p {
+        font-size: 1.3rem;
     }
 }
