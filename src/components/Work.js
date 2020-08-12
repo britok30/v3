@@ -26,7 +26,7 @@ const Work = () => {
                     github="https://github.com/britok30/Play-Space"
                     demo="https://playspace.netlify.com"
                     img={playspace}
-                    stack="React, RAWG API"
+                    stack="React Hooks, Bootstrap, RAWG API"
                 />
                 <div className="project-space"></div>
                 <Project
