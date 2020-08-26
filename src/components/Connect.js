@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../images/Kelvin_Brito_Resume.pdf';
+import resume from '../images/Kelvin Brito Resume.pdf';
 import Fade from 'react-reveal/Fade';
 
 const Connect = () => {
