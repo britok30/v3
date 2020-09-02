@@ -11,7 +11,7 @@ const About = () => {
                             <h2 className="sub-heading">About Me</h2>
                         </Fade>
                     </div>
-                    <div className="col-md-6 col-lg-6 col-sm-6">
+                    <div className="col-md-6 col-lg-6 col-sm-6 about-p">
                         <Fade
                             bottom
                             duration={3000}
