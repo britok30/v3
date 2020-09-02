@@ -9,6 +9,7 @@ import hike from '../images/hike.png';
 import skudra from '../images/skudra.png';
 import akg from '../images/akg.png';
 import productivo from '../images/productivo.png';
+import id from '../images/ID.png';
 import Fade from 'react-reveal/Fade';
 
 const Work = () => {
@@ -65,6 +66,14 @@ const Work = () => {
                     stack="HTML, CSS, JavaScript, Parallax.js"
                 />
                 <div className="project-space"></div>
+                <Project
+                    title="Il Duce"
+                    description="Official website for local artist"
+                    github="https://github.com/britok30/ID"
+                    demo="https://ilduceofficial.com/"
+                    img={id}
+                    stack="HTML, CSS, JavaScript, Greensock"
+                />
                 <Project
                     title="Skudra"
                     description="Portfolio for a Toronto based photographer"
