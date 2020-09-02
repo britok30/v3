@@ -4,8 +4,10 @@ import playspace from '../images/playspace.jpg';
 import covid from '../images/covid.png';
 import apple from '../images/apple.png';
 import appledemo from '../images/AppleNewsDemo.mp4';
+import applereact from '../images/react-apple.mp4';
+import appreact from '../images/apple-react.png';
 import vizcaya from '../images/vizcaya.png';
-import hike from '../images/hike.png';
+// import hike from '../images/hike.png';
 import skudra from '../images/skudra.png';
 import akg from '../images/akg.png';
 import productivo from '../images/productivo.png';
@@ -58,22 +60,23 @@ const Work = () => {
                 />
                 <div className="project-space"></div>
                 <Project
-                    title="The Hike Co."
-                    description="Hiking company website for a client"
-                    github="https://github.com/britok30/The-Hike"
-                    demo="https://thehikeco.netlify.app/"
-                    img={hike}
-                    stack="HTML, CSS, JavaScript, Parallax.js"
+                    title="Apple React"
+                    description="Apple product page featuring Firebase authentication"
+                    github="https://github.com/britok30/react-apple-landing"
+                    demo={applereact}
+                    img={appreact}
+                    stack="React Hooks, Firebase, SCSS"
                 />
                 <div className="project-space"></div>
                 <Project
                     title="Il Duce"
-                    description="Official website for local artist"
+                    description="Official website of Il Duce"
                     github="https://github.com/britok30/ID"
                     demo="https://ilduceofficial.com/"
                     img={id}
                     stack="HTML, CSS, JavaScript, Greensock"
                 />
+                <div className="project-space"></div>
                 <Project
                     title="Skudra"
                     description="Portfolio for a Toronto based photographer"
