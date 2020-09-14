@@ -54,7 +54,7 @@ const Work = () => {
                     title="Vizcaya Design Studio"
                     description="Design studio website exploring design concept"
                     github="https://github.com/britok30/Vizcaya2"
-                    demo="https://vizcayamia.xyz/"
+                    demo="https://vizcaya.netlify.app"
                     img={vizcaya}
                     stack="HTML, CSS, JavaScript"
                 />
