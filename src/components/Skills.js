@@ -22,11 +22,12 @@ const Skills = () => {
                                 <li className="skills">JavaScript (ES6+)</li>
                                 <li className="skills">Python</li>
                                 <li className="skills">Bootstrap</li>
-                                <li className="skills">React (Hooks)</li>
+                                <li className="skills">React</li>
+                                <li className="skills">React Native</li>
                                 <li className="skills">Redux</li>
                                 <li className="skills">Vue</li>
                                 <li className="skills">Node/Express</li>
-                                <li className="skills">Selenium (JS)</li>
+                                <li className="skills">Selenium</li>
                                 <li className="skills">Git</li>
                                 <li className="skills">Adobe Creative Suite</li>
                             </Fade>
