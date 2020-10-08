@@ -90,7 +90,7 @@ const Work = () => {
                     title="AKG Real Estate"
                     description="Real Estate website based in California"
                     github="https://github.com/britok30/akg-res"
-                    demo="https://britores.xyz/"
+                    demo="http://akgres.netlify.app"
                     img={akg}
                     stack="HTML, CSS, JavaScript"
                 />
