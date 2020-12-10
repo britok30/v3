@@ -23,7 +23,7 @@ const Skills = () => {
                                 <li className="skills">jQuery</li>
                                 <li className="skills">TypeScript</li>
                                 <li className="skills">Bootstrap</li>
-                                <li className="skills">React</li>
+                                <li className="skills">React (Hooks)</li>
                                 <li className="skills">Redux</li>
                                 <li className="skills">Vue</li>
                                 <li className="skills">Git</li>
