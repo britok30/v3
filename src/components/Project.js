@@ -1,5 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import Img from 'react-cool-img';
+import placeholder from '../images/placeholder.jpg';
 
 const Project = ({ title, description, github, demo, img, stack }) => {
     return (
@@ -7,9 +9,12 @@ const Project = ({ title, description, github, demo, img, stack }) => {
             <Fade bottom duration={3000} distance={'1rem'}>
                 <div className="row">
                     <div className="col-md-6 col-lg-6 col-sm-6">
-                        <img
+                        <Img
                             className="project-img"
+                            placeholder={placeholder}
+                            debounce={1000}
                             src={img}
+                            cache
                             alt="project-img"
                         />
                     </div>

@@ -15,7 +15,7 @@ const App = () => {
             <Intro />
             <Sugar
                 animation={'fade'}
-                time={3500}
+                time={2500}
                 background={'#000'}
                 color={'#feceab'}
             />
