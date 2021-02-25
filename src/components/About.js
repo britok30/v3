@@ -25,8 +25,7 @@ const About = () => {
                                 websites and applications. As I continue this
                                 life-long journey of self-learning and mastering
                                 my craft, I hope to be shaped by the challenges
-                                and experiences coming my way. I am currently
-                                working in Orlando, FL.
+                                and experiences coming my way.
                             </p>
                         </Fade>
                     </div>
