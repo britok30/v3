@@ -2,6 +2,20 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 const Skills = () => {
+    const skills = [
+        'HTML',
+        'CSS/Sass',
+        'JavaScript (ES6+)',
+        'jQuery',
+        'Bootstrap',
+        'React (Hooks)',
+        'Redux',
+        'Jest',
+        'Vue',
+        'Nuxt',
+        'Git',
+    ];
+
     return (
         <div>
             <section>
@@ -17,17 +31,9 @@ const Skills = () => {
                                 duration={3000}
                                 distance={'1rem'}
                             >
-                                <li className="skills">HTML</li>
-                                <li className="skills">CSS/Sass</li>
-                                <li className="skills">JavaScript (ES6+)</li>
-                                <li className="skills">jQuery</li>
-                                <li className="skills">TypeScript</li>
-                                <li className="skills">Bootstrap</li>
-                                <li className="skills">React (Hooks)</li>
-                                <li className="skills">Redux</li>
-                                <li className="skills">Vue</li>
-                                <li className="skills">Git</li>
-                                <li className="skills">Adobe Creative Suite</li>
+                                {skills.map((skill) => (
+                                    <li className="skills">{skill}</li>
+                                ))}
                             </Fade>
                         </ul>
                     </div>
