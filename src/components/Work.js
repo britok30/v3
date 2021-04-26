@@ -13,6 +13,7 @@ import akg from '../images/akg.png';
 import productivo from '../images/productivo.png';
 import id from '../images/ID.png';
 import Fade from 'react-reveal/Fade';
+import discord from '../images/discord.png';
 
 const Work = () => {
     return (
@@ -66,6 +67,15 @@ const Work = () => {
                     demo={applereact}
                     img={appreact}
                     stack="React Hooks, Firebase, SCSS"
+                />
+                <div className="project-space"></div>
+                <Project
+                    title="Discord React"
+                    description="Discord clone featuring Firebase"
+                    github="https://github.com/britok30/discord-react"
+                    demo={'https://discord-clone-9d6be.web.app/'}
+                    img={discord}
+                    stack="React Hooks, Firebase, Redux"
                 />
                 <div className="project-space"></div>
                 <Project
