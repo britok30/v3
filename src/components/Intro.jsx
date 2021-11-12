@@ -1,18 +1,25 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Arrow from './Arrow';
+import hero from '../images/hero.jpg';
 
 const Intro = () => {
     return (
         <div>
-            <div id="brito">
-                <div className="intro">
-                    <Fade bottom cascade duration={3000} delay={4500}>
-                        <h3 className="intro-lead">Brito</h3>
-                        <p className="intro-p">Frontend Engineer</p>
-                    </Fade>
-                    <div className="arrowspace"></div>
-                    <Arrow />
+            <div>
+                <div className="relative">
+                    <img
+                        className="opacity-50 object-cover min-h-screen"
+                        src={hero}
+                        alt="hero-img"
+                    />
+                    <div className="absolute flex justify-center items-center flex-col inset-1/2">
+                        <h3 className="text-5xl lg:text-8xl text-center mb-3">
+                            Brito
+                        </h3>
+                        <p className="text-3xl lg:text-4xl text-center mb-3">
+                            Frontend Engineer
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
