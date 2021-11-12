@@ -5,9 +5,9 @@ const Skills = () => {
     const skills = [
         'HTML',
         'CSS/Sass',
+        'TypeScript',
         'JavaScript (ES6+)',
-        'jQuery',
-        'Bootstrap',
+        'Tailwind',
         'React (Hooks)',
         'Redux',
         'Jest',
