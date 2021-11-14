@@ -7,16 +7,12 @@ export const Intro = () => {
     const [imageData, setImageData] = useState(null);
 
     useEffect(() => {
+        const photoId = 'onG9j46jP8s';
         const fetchUnsplash = async () => {
             const response = await axios.get(
-                `https://api.unsplash.com/photos/random?client_id=${process.env.REACT_APP_API_KEY}`,
-                {
-                    orientation: 'landscape',
-                    content_filter: 'high',
-                    query: 'nature',
-                }
+                `https://api.unsplash.com/photos/${photoId}?client_id=${process.env.REACT_APP_API_KEY}`
             );
-            console.log(response.data);
+
             setImageData(response.data);
         };
 
