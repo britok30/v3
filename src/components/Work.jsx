@@ -15,7 +15,7 @@ export const Work = () => {
         <div>
             <Fade bottom duration={3000} distance={'1rem'}>
                 <h1 className="text-gray-300 text-4xl my-10 antialiased text-center">
-                    Some Things I've Built
+                    Some things I've built
                 </h1>
             </Fade>
 

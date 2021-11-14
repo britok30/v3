@@ -7,7 +7,7 @@ export const Connect = () => {
         <>
             <Fade bottom duration={3000} distance={'1rem'}>
                 <h1 className="text-white text-4xl mt-10 text-center antialiased">
-                    Get In Touch
+                    Get in touch
                 </h1>
             </Fade>
 
