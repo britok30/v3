@@ -1,32 +1,22 @@
-import React, { Fragment } from 'react';
-import { Sugar } from 'react-preloaders';
-import Intro from './Intro';
-import About from './About';
-import Work from './Work';
-import Skills from './Skills';
-import Connect from './Connect';
-import Footer from './Footer';
-
-import '../App.css';
+import React from 'react';
+import { Intro } from './Intro';
+import { Work } from './Work';
+import { Skills } from './Skills';
+import { Connect } from './Connect';
+import { Footer } from './Footer';
 
 const App = () => {
     return (
-        <Fragment>
+        <div className="bg-black dark min-h-screen flex justify-center flex-col">
             <Intro />
-            <Sugar
-                animation={'fade'}
-                time={2500}
-                background={'#000'}
-                color={'#feceab'}
-            />
-            <div className="container">
-                <About />
+
+            <div className="mx-auto">
                 <Work />
                 <Skills />
                 <Connect />
                 <Footer />
             </div>
-        </Fragment>
+        </div>
     );
 };
 
