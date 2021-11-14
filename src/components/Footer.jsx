@@ -27,7 +27,7 @@ export const Footer = () => {
                     >
                         ❤️
                     </span>
-                    with React
+                    with React & Tailwind
                 </p>
             </Fade>
         </div>

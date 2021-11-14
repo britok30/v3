@@ -29,7 +29,7 @@ export const Skills = () => {
                     {skills.map((skill, index) => (
                         <span
                             key={index}
-                            className="text-white text-sm font-light cursor-pointer hover:text-red-600 transition-all duration-200 ease-in-out antialiased"
+                            className="text-gray-400 text-sm font-light cursor-pointer hover:text-red-600 transition-all duration-200 ease-in-out antialiased"
                         >
                             {skill}
                         </span>

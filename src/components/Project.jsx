@@ -18,10 +18,10 @@ export const Project = ({ title, description, github, demo, img, stack }) => {
                     <h2 className="text-2xl text-white mb-2 antialiased">
                         {title}
                     </h2>
-                    <p className="text-gray-300 mb-2 text-sm antialiased">
+                    <p className="text-gray-400 mb-2 text-sm antialiased">
                         {description}
                     </p>
-                    <p className="text-gray-300 mb-2 text-sm antialiased">
+                    <p className="text-gray-400 mb-2 text-sm antialiased">
                         {stack}
                     </p>
                     <div className="flex justify-center items-center">
