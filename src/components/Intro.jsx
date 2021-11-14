@@ -14,7 +14,7 @@ export const Intro = () => {
                     content_filter: 'high',
                     orientation: 'landscape',
                     // Wallpapers, Nature, Architecture, Texture/Patterns
-                    topics: 'bo8jQKTaE0Y, 6sMVjTLSkeQ, rnSKDHwwYUk, iUIsnVtjB0Y',
+                    topics: 'bo8jQKTaE0Y,6sMVjTLSkeQ,rnSKDHwwYUk,iUIsnVtjB0Y',
                 }
             );
 
