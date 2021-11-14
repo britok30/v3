@@ -5,12 +5,30 @@ import axios from 'axios';
 
 export const Intro = () => {
     const [imageData, setImageData] = useState(null);
+    const photoIds = [
+        'onG9j46jP8s',
+        'mwO0ofO72J8',
+        'QEob0Fp4rdg',
+        'dTSacXjWqCw',
+        'P-O6B62iWgA',
+        's0grRYEDaL4',
+        'N27_VosAROY',
+        'y_UlqOnsimk',
+        '0F2nvpob0_c',
+        'i2GDVam45sY',
+        'qiadYggIU5w',
+    ];
+
+    const getRandomPhoto = () => {
+        return photoIds[Math.floor(Math.random() * photoIds.length)];
+    };
 
     useEffect(() => {
-        const photoId = 'onG9j46jP8s';
         const fetchUnsplash = async () => {
             const response = await axios.get(
-                `https://api.unsplash.com/photos/${photoId}?client_id=${process.env.REACT_APP_API_KEY}`
+                `https://api.unsplash.com/photos/${getRandomPhoto()}?client_id=${
+                    process.env.REACT_APP_API_KEY
+                }`
             );
 
             setImageData(response.data);
