@@ -4,7 +4,7 @@ import { GitHub, Share } from 'react-feather';
 export const Project = ({ title, description, github, demo, img, stack }) => {
     return (
         <div>
-            <div className="flex justify-center items-start mb-12">
+            <div className="flex justify-center items-center flex-col md:flex-row md:items-start mb-12">
                 <div className="w-72">
                     <img
                         className="object-cover rounded-md opacity-60"
@@ -14,7 +14,7 @@ export const Project = ({ title, description, github, demo, img, stack }) => {
                     />
                 </div>
 
-                <div className="flex justify-between items-start flex-col w-64 ml-10">
+                <div className="flex justify-between items-start flex-col w-64 mt-10 md:ml-10 md:mt-0">
                     <h2 className="text-2xl text-white mb-2 antialiased">
                         {title}
                     </h2>

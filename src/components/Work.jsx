@@ -14,11 +14,11 @@ export const Work = () => {
     return (
         <div>
             <Fade bottom duration={3000} distance={'1rem'}>
-                <h1 className="text-gray-300 text-4xl mt-10 antialiased">
+                <h1 className="text-gray-300 text-4xl my-10 antialiased text-center">
                     Some Things I've Built
                 </h1>
             </Fade>
-            <div className="border mb-10"></div>
+
             <Fade bottom duration={3000} distance={'1rem'}>
                 <Project
                     title="Playspace"

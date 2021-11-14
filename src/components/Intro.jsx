@@ -32,7 +32,7 @@ export const Intro = () => {
                     rel="noreferrer"
                 >
                     <img
-                        className="opacity-50 object-cover max-h-screen min-w-full"
+                        className="opacity-50 object-cover h-screen max-h-screen min-w-full"
                         src={imageData.urls.full}
                         alt="hero-img"
                         loading="eager"

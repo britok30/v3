@@ -6,10 +6,12 @@ export const Connect = () => {
     return (
         <>
             <Fade bottom duration={3000} distance={'1rem'}>
-                <h1 className="text-gray-300 text-4xl mt-10">Get In Touch</h1>
+                <h1 className="text-gray-300 text-4xl mt-10 text-center antialiased">
+                    Get In Touch
+                </h1>
             </Fade>
-            <div className="border"></div>
-            <div className="flex justify-center space-x-6 items-center flex-col md:flex-row mt-3 font-light">
+
+            <div className="flex justify-center items-center flex-col md:flex-row md:space-x-6  mt-3 font-light">
                 <Fade bottom cascade duration={3000} distance={'1rem'}>
                     <a
                         className="text-white"
