@@ -7,29 +7,15 @@ export const Intro = () => {
     const [imageData, setImageData] = useState(null);
 
     useEffect(() => {
-        const photoIds = [
-            'onG9j46jP8s',
-            'mwO0ofO72J8',
-            'QEob0Fp4rdg',
-            'dTSacXjWqCw',
-            'P-O6B62iWgA',
-            's0grRYEDaL4',
-            'N27_VosAROY',
-            'y_UlqOnsimk',
-            '0F2nvpob0_c',
-            'i2GDVam45sY',
-            'qiadYggIU5w',
-        ];
-
-        const getRandomPhoto = () => {
-            return photoIds[Math.floor(Math.random() * photoIds.length)];
-        };
-
         const fetchUnsplash = async () => {
             const response = await axios.get(
-                `https://api.unsplash.com/photos/${getRandomPhoto()}?client_id=${
-                    process.env.REACT_APP_API_KEY
-                }`
+                `https://api.unsplash.com/photos/random?client_id=${process.env.REACT_APP_API_KEY}`,
+                {
+                    content_filter: 'high',
+                    orientation: 'landscape',
+                    // Wallpapers, Nature, Architecture, Texture/Patterns
+                    topics: 'bo8jQKTaE0Y, 6sMVjTLSkeQ, rnSKDHwwYUk, iUIsnVtjB0Y',
+                }
             );
 
             setImageData(response.data);
