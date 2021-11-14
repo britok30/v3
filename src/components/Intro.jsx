@@ -13,16 +13,26 @@ export const Intro = () => {
                 {
                     content_filter: 'high',
                     orientation: 'landscape',
-                    // Wallpapers, Nature, Architecture, Texture/Patterns
-                    topics: 'bo8jQKTaE0Y,6sMVjTLSkeQ,rnSKDHwwYUk,iUIsnVtjB0Y',
+                    // Nature, Architecture, Texture/Patterns
+                    topics: '6sMVjTLSkeQ,rnSKDHwwYUk,iUIsnVtjB0Y',
                 }
             );
 
             setImageData(response.data);
+            console.log(response.data);
+            //Trigger download behind the scenes
+            triggerDownload(response.data);
         };
 
         fetchUnsplash();
     }, []);
+
+    const triggerDownload = (data) => {
+        console.log(
+            `${data.links.download_location}&client_id=${process.env.REACT_APP_API_KEY}`
+        );
+        return `${data.links.download_location}&client_id=${process.env.REACT_APP_API_KEY}`;
+    };
 
     return (
         <div className="relative h-screen max-h-screen min-w-full">
