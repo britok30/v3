@@ -28,9 +28,6 @@ export const Intro = () => {
     }, []);
 
     const triggerDownload = (data) => {
-        console.log(
-            `${data.links.download_location}&client_id=${process.env.REACT_APP_API_KEY}`
-        );
         return `${data.links.download_location}&client_id=${process.env.REACT_APP_API_KEY}`;
     };
 
