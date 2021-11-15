@@ -1,6 +1,6 @@
 ![Screen Shot 2021-11-15 at 5 57 21 PM](https://user-images.githubusercontent.com/52144063/141865923-b2c87f1c-2547-437c-bc6e-bf4667341eff.png)
 
-This is my portfolio. I updated it to use React, React Hooks, and Tailwind for styling. This features my best (and latest) projects I currently work on. Hope you enjoy. Below are the instructions to start up the build locally. 
+This is my portfolio. I updated it to use React, React Hooks, and Tailwind for styling. It also features the Unsplash API for the hero images, with the ability to download the image and of course, credits to the photographer. This features my best (and latest) projects I currently work on. Hope you enjoy. Below are the instructions to start up the build locally. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
