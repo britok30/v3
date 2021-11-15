@@ -31,7 +31,7 @@ export const About = () => {
                 <Fade bottom duration={3000} distance={'1rem'}>
                     <p className="font-light text-gray-400 mb-5">
                         In my free time, I enjoy photography, reading books,
-                        bike trails, traveling, hiking, and painting
+                        bike trails, traveling, hiking, and painting.
                     </p>
                 </Fade>
             </div>
