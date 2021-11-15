@@ -8,6 +8,7 @@ export const Intro = () => {
 
     useEffect(() => {
         const fetchUnsplash = async () => {
+            // Fetch unsplash api
             const response = await axios.get(
                 `https://api.unsplash.com/photos/random?client_id=${process.env.REACT_APP_API_KEY}`,
                 {
