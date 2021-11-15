@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowDown } from 'react-feather';
+import { ArrowDown, Download } from 'react-feather';
 import Fade from 'react-reveal/Fade';
 import axios from 'axios';
 
 export const Intro = () => {
     const [imageData, setImageData] = useState(null);
-
+    const [download, setDownload] = useState(null);
     useEffect(() => {
         const fetchUnsplash = async () => {
             const response = await axios.get(
@@ -20,16 +20,24 @@ export const Intro = () => {
 
             setImageData(response.data);
             console.log(response.data);
-            //Trigger download behind the scenes
-            triggerDownload(response.data);
         };
 
         fetchUnsplash();
     }, []);
 
-    const triggerDownload = (data) => {
-        return `${data.links.download_location}&client_id=${process.env.REACT_APP_API_KEY}`;
-    };
+    useEffect(() => {
+        if (!imageData) return;
+
+        const fetchDownload = async (data) => {
+            const response = await axios.get(
+                `${data.links.download_location}&client_id=${process.env.REACT_APP_API_KEY}`
+            );
+
+            setDownload(response.data);
+        };
+
+        fetchDownload(imageData);
+    }, [imageData]);
 
     return (
         <div className="relative h-screen max-h-screen min-w-full">
@@ -88,6 +96,26 @@ export const Intro = () => {
                             </a>
                         </>
                     </Fade>
+                )}
+            </div>
+
+            <div className="absolute bottom-3 left-3 opacity-70 text-white text-sm ">
+                {download && (
+                    <a
+                        href={download.url}
+                        download={imageData.user.name}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Fade
+                            bottom
+                            delay={2000}
+                            duration={3000}
+                            distance={'1rem'}
+                        >
+                            <Download color="#fff" size={28} />
+                        </Fade>
+                    </a>
                 )}
             </div>
 
