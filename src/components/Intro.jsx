@@ -99,7 +99,7 @@ export const Intro = () => {
                 )}
             </div>
 
-            <div className="absolute bottom-3 left-3 opacity-70 text-white text-sm ">
+            <div className="absolute bottom-3 left-3 opacity-70 text-white">
                 {download && (
                     <a
                         href={download.url}
