@@ -17,7 +17,7 @@ export const About = () => {
                         building & designing exceptional, high-quality websites
                         and applications. As I continue this life-long journey
                         of self-learning and mastering my craft, I hope to be
-                        shaped by the challenges and experiences coming my way.
+                        shaped by the challenges and experiences coming my way.jfgk the chslnnehsnf jjff
                     </p>
                 </Fade>
                 <Fade bottom duration={3000} distance={'1rem'}>

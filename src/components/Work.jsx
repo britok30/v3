@@ -3,12 +3,14 @@ import { Project } from './Project';
 import playspace from '../images/playspace.jpg';
 import apple from '../images/apple.png';
 import appledemo from '../images/AppleNewsDemo.mp4';
+import spotifyDemo from '../images/spotifyDemo.mp4';
 import applereact from '../images/react-apple.mp4';
 import appreact from '../images/apple-react.png';
 import vizcaya from '../images/vizcaya.png';
 import Fade from 'react-reveal/Fade';
 import discord from '../images/discord.png';
 import horizon from '../images/horizon.png';
+import spotify from '../images/spotify.png';
 
 export const Work = () => {
     return (
@@ -17,6 +19,17 @@ export const Work = () => {
                 <h1 className="text-gray-300 text-4xl my-10 antialiased text-center">
                     Some things I've built
                 </h1>
+            </Fade>
+
+            <Fade bottom duration={3000} distance={'1rem'}>
+                <Project
+                    title="Spotify Next v2"
+                    description="Spotify app built with Next.js and Spotify API"
+                    github="https://github.com/britok30/spotify-next"
+                    demo={spotifyDemo}
+                    img={spotify}
+                    stack="Next.js, React, TypeScript, TailwindCSS, Recoil, Spotify API"
+                />
             </Fade>
 
             <Fade bottom duration={3000} distance={'1rem'}>
@@ -48,7 +61,7 @@ export const Work = () => {
                     github="https://github.com/britok30/horizon-search"
                     demo="https://horizonsearch.netlify.app/"
                     img={horizon}
-                    stack="React, Google Search API, Tailwind"
+                    stack="React, Google Search API, TailwindCSS"
                 />
             </Fade>
             <Fade bottom duration={3000} distance={'1rem'}>
