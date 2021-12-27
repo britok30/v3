@@ -13,7 +13,7 @@ export const About = () => {
             <div className="w-60 md:w-96 antialiased mx-auto">
                 <Fade bottom duration={3000} distance={'1rem'}>
                     <p className="font-light text-gray-400 my-5">
-                        I'm a front-end software engineer specializing in
+                        I'm a front end software engineer specializing in
                         building & designing exceptional, high-quality websites
                         and applications. As I continue this life-long journey
                         of self-learning and mastering my craft, I hope to be
@@ -25,7 +25,7 @@ export const About = () => {
                         I thrive at the intersection of tech & art/design. I'm
                         passionate in combining my technical knowledge and
                         artistic creativity to build beautiful UIs, and continue
-                        expanding my knowledge in everything front-end.
+                        expanding my knowledge in everything front end.
                     </p>
                 </Fade>
                 <Fade bottom duration={3000} distance={'1rem'}>
