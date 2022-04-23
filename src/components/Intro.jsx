@@ -30,7 +30,6 @@ export const Intro = () => {
       );
 
       setImageData(response.data);
-      console.log(response.data);
     };
 
     fetchUnsplash();
