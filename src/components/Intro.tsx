@@ -79,7 +79,9 @@ export const Intro = () => {
           <img
             className="opacity-50 object-cover h-screen max-h-screen min-w-full"
             src={imageData?.urls.raw}
-            alt="hero-img"
+            alt={
+              imageData.alt_description ? imageData.alt_description : "hero-img"
+            }
             loading="eager"
           />
         </a>
