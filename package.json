@@ -7,13 +7,16 @@
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
         "@testing-library/user-event": "^7.2.1",
+        "@types/jest": "^27.4.1",
+        "@types/node": "^17.0.25",
+        "@types/react": "^18.0.6",
+        "@types/react-dom": "^18.0.2",
         "axios": "^0.24.0",
-        "kbar": "0.1.0-beta.21",
         "react": "^17.0.0",
         "react-dom": "^17.0.0",
         "react-feather": "^2.0.9",
-        "react-reveal": "^1.2.2",
-        "react-scripts": "^4.0.0"
+        "react-scripts": "^4.0.0",
+        "typescript": "^3.9.10"
     },
     "scripts": {
         "start": "craco start",
