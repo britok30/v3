@@ -35,13 +35,13 @@ export const Intro = () => {
         }
       );
       setImageData(response.data);
+
+      setTimeout(() => {
+        setShowImage(true);
+      }, 500);
     };
 
     fetchUnsplash();
-
-    setTimeout(() => {
-      setShowImage(true);
-    }, 500);
   }, []);
 
   useEffect(() => {
