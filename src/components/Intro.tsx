@@ -80,7 +80,6 @@ export const Intro = () => {
             alt={
               imageData.alt_description ? imageData.alt_description : "hero-img"
             }
-            loading="eager"
           />
         </a>
       )}
