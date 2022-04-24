@@ -116,7 +116,7 @@ export const Intro = () => {
               rel="noreferrer"
             >
               {imageData?.user.name}
-            </a>
+            </a>{" "}
             on{" "}
             <a href="https://unsplash.com" target="_blank" rel="noreferrer">
               Unsplash
