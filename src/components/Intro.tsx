@@ -58,8 +58,6 @@ export const Intro = () => {
     fetchDownload(imageData);
   }, [imageData]);
 
-  console.log(imageData);
-
   return (
     <div className="relative h-screen max-h-screen min-w-full">
       {!showImage && imageData && (
