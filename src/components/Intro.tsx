@@ -58,6 +58,8 @@ export const Intro = () => {
     fetchDownload(imageData);
   }, [imageData]);
 
+  console.log(imageData);
+
   return (
     <div className="relative h-screen max-h-screen min-w-full">
       {!showImage && imageData && (
@@ -76,7 +78,7 @@ export const Intro = () => {
         >
           <img
             className="opacity-50 object-cover h-screen max-h-screen min-w-full"
-            src={imageData?.urls.full}
+            src={imageData?.urls.raw}
             alt="hero-img"
             loading="eager"
           />
