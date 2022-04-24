@@ -103,7 +103,7 @@ export const Intro = () => {
 
       <div className="absolute text-white text-sm right-3 bottom-3 opacity-50">
         {imageData && (
-          <>
+          <span>
             Photo by{" "}
             <a
               href={`https://unsplash.com/${imageData?.user.username}`}
@@ -116,7 +116,7 @@ export const Intro = () => {
             <a href="https://unsplash.com" target="_blank" rel="noreferrer">
               Unsplash
             </a>
-          </>
+          </span>
         )}
       </div>
 
