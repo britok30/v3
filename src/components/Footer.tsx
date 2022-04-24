@@ -21,7 +21,7 @@ export const Footer = () => {
         <span className="mx-2 text-xs" role="img" aria-label="emoji">
           ❤️
         </span>
-        with React & Tailwind
+        with React, TypeScript & Tailwind
       </p>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowDown, Download } from "react-feather";
 import axios, { AxiosResponse } from "axios";
+import { Blurhash } from "react-blurhash";
 
 interface Topics {
   nature: string;
@@ -11,6 +12,7 @@ interface Topics {
 
 export const Intro = () => {
   const [imageData, setImageData] = useState<any>(null);
+  const [showImage, setShowImage] = useState<boolean>(false);
   const [download, setDownload] = useState<any>(null);
   const baseUrl: string = "https://api.unsplash.com";
 
@@ -32,11 +34,14 @@ export const Intro = () => {
           },
         }
       );
-
       setImageData(response.data);
     };
 
     fetchUnsplash();
+
+    setTimeout(() => {
+      setShowImage(true);
+    }, 500);
   }, []);
 
   useEffect(() => {
@@ -55,20 +60,29 @@ export const Intro = () => {
 
   return (
     <div className="relative h-screen max-h-screen min-w-full">
-      {imageData && (
+      {!showImage && imageData && (
+        <Blurhash
+          hash={imageData?.blur_hash}
+          height="100vh"
+          className="opacity-50 object-cover h-screen max-h-screen min-w-full"
+        />
+      )}
+
+      {showImage && (
         <a
-          href={`https://unsplash.com/photos/${imageData.id}`}
+          href={`https://unsplash.com/photos/${imageData?.id}`}
           target="_blank"
           rel="noreferrer"
         >
           <img
             className="opacity-50 object-cover h-screen max-h-screen min-w-full"
-            src={imageData.urls.full}
+            src={imageData?.urls.full}
             alt="hero-img"
-            loading="lazy"
+            loading="eager"
           />
         </a>
       )}
+
       <div className="absolute flex justify-center items-center flex-col top-[50%] left-[50%]">
         <h1 className="text-3xl lg:text-6xl font-light text-center mb-3 text-white antialiased">
           Brito
@@ -88,11 +102,11 @@ export const Intro = () => {
           <>
             Photo by{" "}
             <a
-              href={`https://unsplash.com/${imageData.user.username}`}
+              href={`https://unsplash.com/${imageData?.user.username}`}
               target="_blank"
               rel="noreferrer"
             >
-              {imageData.user.name}
+              {imageData?.user.name}
             </a>
             on{" "}
             <a href="https://unsplash.com" target="_blank" rel="noreferrer">
@@ -105,8 +119,8 @@ export const Intro = () => {
       <div className="absolute bottom-3 left-3 opacity-70 text-white">
         {download && (
           <a
-            href={download.url}
-            download={imageData.user.name}
+            href={download?.url}
+            download={imageData?.user.name}
             target="_blank"
             rel="noreferrer"
           >

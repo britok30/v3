@@ -3,7 +3,7 @@ export const About = () => {
   return (
     <div>
       <h1 className="text-gray-300 text-2xl md:text-4xl text-center font-bold mt-14">
-        Hey there, I'm Kelvin Brito!
+        Hey there, I'm Kelvin Brito! 👨🏽‍💻
       </h1>
 
       <div className="w-60 md:w-96 antialiased mx-auto">
