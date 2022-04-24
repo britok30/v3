@@ -87,7 +87,12 @@ export const Intro = () => {
         </a>
       )}
 
-      <div className="absolute flex justify-center items-center flex-col top-[50%] left-[50%]">
+      <div
+        className="absolute flex justify-center items-center flex-col top-[50%] left-[50%]"
+        style={{
+          transform: "translate(-50%,-50%)",
+        }}
+      >
         <h1 className="text-3xl lg:text-6xl font-light text-center mb-3 text-white antialiased">
           Brito
         </h1>
