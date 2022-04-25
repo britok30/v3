@@ -37,7 +37,8 @@ export const Intro = () => {
           },
         }
       );
-      setRandomPhotoData(response.data as Random);
+      const data: Random = response.data;
+      setRandomPhotoData(data);
 
       setTimeout(() => {
         setShowImage(true);
@@ -54,8 +55,8 @@ export const Intro = () => {
       const response = await axios.get(
         `${data.links.download_location}&client_id=${process.env.REACT_APP_API_KEY}`
       );
-
-      setDownloadPhoto(response.data as DownloadPhoto);
+      const downloadData: DownloadPhoto = response.data;
+      setDownloadPhoto(downloadData);
     };
 
     fetchDownload(randomPhotoData);
