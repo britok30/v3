@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ArrowDown, Download } from "react-feather";
 import axios, { AxiosResponse } from "axios";
 import { Blurhash } from "react-blurhash";
+import { DownloadPhoto, Random } from "../types.ts";
 
 interface Topics {
   nature: string;
@@ -11,9 +12,11 @@ interface Topics {
 }
 
 export const Intro = () => {
-  const [imageData, setImageData] = useState<any>(null);
+  const [randomPhotoData, setRandomPhotoData] = useState<Random | null>(null);
   const [showImage, setShowImage] = useState<boolean>(false);
-  const [download, setDownload] = useState<any>(null);
+  const [downloadPhoto, setDownloadPhoto] = useState<DownloadPhoto | null>(
+    null
+  );
   const baseUrl: string = "https://api.unsplash.com";
 
   useEffect(() => {
@@ -34,7 +37,7 @@ export const Intro = () => {
           },
         }
       );
-      setImageData(response.data);
+      setRandomPhotoData(response.data as Random);
 
       setTimeout(() => {
         setShowImage(true);
@@ -45,24 +48,24 @@ export const Intro = () => {
   }, []);
 
   useEffect(() => {
-    if (!imageData) return;
+    if (!randomPhotoData) return;
 
-    const fetchDownload = async (data: any) => {
+    const fetchDownload = async (data: Random) => {
       const response = await axios.get(
         `${data.links.download_location}&client_id=${process.env.REACT_APP_API_KEY}`
       );
 
-      setDownload(response.data);
+      setDownloadPhoto(response.data as DownloadPhoto);
     };
 
-    fetchDownload(imageData);
-  }, [imageData]);
+    fetchDownload(randomPhotoData);
+  }, [randomPhotoData]);
 
   return (
     <div className="relative h-screen max-h-screen min-w-full">
-      {!showImage && imageData && (
+      {!showImage && randomPhotoData && randomPhotoData?.blur_hash && (
         <Blurhash
-          hash={imageData?.blur_hash}
+          hash={randomPhotoData.blur_hash}
           height="100vh"
           className="opacity-50 object-cover h-screen max-h-screen min-w-full"
         />
@@ -70,15 +73,17 @@ export const Intro = () => {
 
       {showImage && (
         <a
-          href={`https://unsplash.com/photos/${imageData?.id}`}
+          href={`https://unsplash.com/photos/${randomPhotoData?.id}`}
           target="_blank"
           rel="noreferrer"
         >
           <img
             className="opacity-50 object-cover h-screen max-h-screen min-w-full"
-            src={imageData?.urls.raw}
+            src={randomPhotoData?.urls.raw}
             alt={
-              imageData.alt_description ? imageData.alt_description : "hero-img"
+              randomPhotoData?.alt_description
+                ? randomPhotoData.alt_description
+                : "hero-img"
             }
           />
         </a>
@@ -104,15 +109,15 @@ export const Intro = () => {
       </div>
 
       <div className="absolute text-white text-sm right-3 bottom-3 opacity-50">
-        {imageData && (
+        {randomPhotoData && (
           <span>
             Photo by{" "}
             <a
-              href={`https://unsplash.com/${imageData?.user.username}`}
+              href={`https://unsplash.com/${randomPhotoData?.user.username}`}
               target="_blank"
               rel="noreferrer"
             >
-              {imageData?.user.name}
+              {randomPhotoData?.user.name}
             </a>{" "}
             on{" "}
             <a href="https://unsplash.com" target="_blank" rel="noreferrer">
@@ -123,10 +128,10 @@ export const Intro = () => {
       </div>
 
       <div className="absolute bottom-3 left-3 opacity-70 text-white">
-        {download && (
+        {downloadPhoto && (
           <a
-            href={download?.url}
-            download={imageData?.user.name}
+            href={downloadPhoto?.url}
+            download={randomPhotoData?.user.name}
             target="_blank"
             rel="noreferrer"
           >
