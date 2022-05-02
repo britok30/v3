@@ -1,6 +1,6 @@
 import React from 'react';
 import { Project } from './Project';
-import playspace from '../images/playspace.jpg';
+import playspace from '../images/playspace.png';
 import apple from '../images/apple.png';
 import appledemo from '../images/AppleNewsDemo.mp4';
 import spotifyDemo from '../images/spotifyDemo.mp4';
