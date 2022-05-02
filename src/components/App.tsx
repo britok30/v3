@@ -1,7 +1,7 @@
 import React from "react";
 import { Intro } from "./Intro";
 import { About } from "./About";
-import { Work } from "./Work";
+import { Projects } from "./Projects";
 import { Skills } from "./Skills";
 import { Connect } from "./Connect";
 import { Footer } from "./Footer";
@@ -12,7 +12,7 @@ const App = () => {
       <Intro />
       <div className="mx-auto">
         <About />
-        <Work />
+        <Projects />
         <Skills />
         <Connect />
         <Footer />
