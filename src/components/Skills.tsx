@@ -23,7 +23,7 @@ export const Skills = () => {
                 Skills
             </h1>
 
-            <div className="mt-3 flex flex-col items-center justify-center md:flex-row md:space-x-2">
+            <div className="mt-3 flex flex-col items-center justify-center md:flex-row md:w-10 md:space-x-2">
                 {skills.map((skill, index) => (
                     <span
                         key={index}
