@@ -11,7 +11,7 @@ import vizcaya from "../images/vizcaya.png";
 // import discord from '../images/discord.png';
 import horizon from "../images/horizon.png";
 import spotify from "../images/spotify.png";
-import njs from "../images/njs.jpg";
+import njs from "../images/njs.png";
 
 export const Projects = () => {
   return (
