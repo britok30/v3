@@ -8,7 +8,7 @@ import { Footer } from "./Footer";
 
 const App = () => {
   return (
-    <div className="bg-black dark min-h-screen flex justify-center flex-col">
+    <div className="bg-black min-h-screen flex justify-center flex-col">
       <Intro />
       <div className="mx-auto">
         <About />
